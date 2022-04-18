@@ -25,9 +25,6 @@
     <style name="NoActionBar" parent="Theme.WeatherApp">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
-    </style>
-    
-    <style name="TransparentStatusBar" parent="NoActionBar">
         <item name="android:navigationBarColor">@android:color/transparent</item>
     </style>
 

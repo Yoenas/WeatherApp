@@ -3,10 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/CurriculumRPL/Weather/app/src/main/res/drawable/bg_icon_weather.xml" value="0.107" />
+        <entry key="..\:/AndroidStudioProjects/CurriculumRPL/Weather/app/src/main/res/drawable/bg_splash_screen.xml" value="0.107" />
         <entry key="..\:/AndroidStudioProjects/CurriculumRPL/Weather/app/src/main/res/drawable/color_cursor.xml" value="0.144" />
         <entry key="..\:/AndroidStudioProjects/CurriculumRPL/Weather/app/src/main/res/drawable/ic_search.xml" value="0.144" />
-        <entry key="..\:/AndroidStudioProjects/CurriculumRPL/Weather/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/AndroidStudioProjects/CurriculumRPL/Weather/app/src/main/res/layout/row_item_weather.xml" value="0.17083333333333334" />
+        <entry key="..\:/AndroidStudioProjects/CurriculumRPL/Weather/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/CurriculumRPL/Weather/app/src/main/res/layout/row_item_weather.xml" value="0.2" />
       </map>
     </option>
   </component>

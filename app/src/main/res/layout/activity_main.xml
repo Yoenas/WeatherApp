@@ -15,20 +15,30 @@
             android:id="@+id/img_bg_weather"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/heavycloud"
-            android:scaleType="fitXY"
-            android:contentDescription="@string/content_bg_based_on_weather" />
+            android:contentDescription="@string/content_bg_based_current_weather"
+            android:scaleType="centerCrop" />
 
-        <ImageView
-            android:id="@+id/img_ic_weather"
+        <LinearLayout
+            android:id="@+id/ll_ic_weather"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:layout_marginTop="64dp"
-            android:contentDescription="@string/content_icon_based_on_weather"
-            android:src="@color/white"
+            android:background="@drawable/bg_icon_weather"
+            android:backgroundTint="@color/transparent"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2">
+
+            <ImageView
+                android:id="@+id/img_ic_weather"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/bg_icon_weather"
+                android:contentDescription="@string/content_icon_based_on_weather"
+                android:scaleType="fitXY" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/tv_degree"
@@ -36,19 +46,17 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:fontFamily="sans-serif"
-            android:text="32 °C"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="48sp"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@id/img_ic_weather" />
+            app:layout_constraintTop_toBottomOf="@id/ll_ic_weather" />
 
         <TextView
             android:id="@+id/tv_city"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
-            android:text="Jakarta"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="38sp"
@@ -59,12 +67,13 @@
             android:id="@+id/rv_weather"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginBottom="64dp"
-            android:background="@color/white"
+            android:background="@android:color/transparent"
             app:layout_constraintBottom_toTopOf="@id/edt_search"
-            app:layout_constraintTop_toBottomOf="@id/tv_city"
-            tools:layout_editor_absoluteX="16dp" />
+            app:layout_constraintTop_toBottomOf="@id/tv_city" />
 
         <androidx.appcompat.widget.SearchView
             android:id="@+id/edt_search"
