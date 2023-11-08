@@ -130,11 +130,11 @@ class MainActivity : AppCompatActivity() {
                 if (grantResults.isNotEmpty() &&
                     grantResults[0] == PackageManager.PERMISSION_GRANTED
                 ) {
-                    // permission granted
+                    getWeatherByCurrentLocation()
                 } else {
                     // permission denied
                     Toast.makeText(
-                        this, "You need to grant permission to access location",
+                        this, "Need permission to access location.",
                         Toast.LENGTH_SHORT
                     ).show()
                 }

@@ -16,7 +16,7 @@ import java.util.*
 
 class WeatherAdapter : RecyclerView.Adapter<WeatherAdapter.MyViewHolder>() {
 
-    val listForecast = ArrayList<ListItem>()
+    private val listForecast = ArrayList<ListItem>()
 
     class MyViewHolder(val binding: RowItemWeatherBinding) : RecyclerView.ViewHolder(binding.root)
 
